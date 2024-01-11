@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@700;800;900&family=Quantico:wght@400;700&display=swap');
+@import "./base.css";
+
+:root{
+    --primary-color: #00DFF0;
+    --secondary-color: #F0008E;
+    --tertiary-color: #5100FF;
+    --quaternary-color: #E55AFD;
+    --text-color: #C1C1C1;
+    --background-color: #060017;
+    --font-family-primary: 'orbitron', sans-serif;
+    --font-family-secondary: 'quantico', sans-serif;
+    --font-family-tertiary: 'michroma', sans-serif;
+    --h1-size: 20px;
+    --h2-size: 15px;
+    --h3-size: 12px;
+    --paragraf-size: 12px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 120px;
+}
+
+*{
+    background-color:var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding-top: 80px;
+}
+
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+.flex{
+    display:flex;
+}
+
+h1{
+    color: transparent;
+    background: linear-gradient(
+        to bottom right,
+        var(--secondary-color),
+        var(--primary-color),
+        var(--tertiary-color)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: var(--font-family-primary);
+    font-weight: 800;
+    text-align: center;
+    font-size: var(--h1-size);
+    z-index: 1;
+}
+
+@media (width>900px){
+
+    h1{
+        font-size: 50px;
+    }
+}
